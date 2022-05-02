@@ -1,0 +1,66 @@
+git@github.com:elly1992/tuit.git
+
+
+CREAR NUEVO REPOSITORIO
+
+echo "# tuit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:elly1992/tuit.git
+git push -u origin main
+
+HACER PUSH
+
+git remote add origin git@github.com:elly1992/tuit.git
+git branch -M main
+git push -u origin main
+
+
+-------------HEROKU ----------------------
+
+----Install the Heroku CLI
+
+heroku login
+
+
+--- Create a new Git repository
+
+cd my-project/
+git init
+heroku git:remote -a copiatuiter
+
+------ Deploy your application
+
+git add .
+git commit -am "make it better"
+git push heroku master
+
+----------- CONEXION MONGO --------------
+mongodb+srv://ellym:<password>@tuiter.ljcmz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+--------------------------------------------------------------
+
+
+PARA TODO INICIO DE PROYECTO HAY QUE CREAR LA ESTRUCTURA DE CARPETAS SIGUIENTE
+
+Go para funcionar bien y poder importar paquetes locales.
+
+Tenemos que crear una estructura de carpetas:
+C: -> crear carpeta go -> crear carptas src, pkg y bin.
+Dentro de src crear la carpeta github.com y dentro de esta carpeta hay que crear otra con el nombre de usuario en github (elly1992), luego crear una carpeta con el nombre del repositorio a usar y dentro de esta carpeta crear las siguientes, bd, handlers, jwt, middlew, routers, models y uploads.
+
+
+-------------- variables de entorno
+Propiedades de este equipo
+Configuracion avanzada del sistema
+variables de entorno
+En Gophat colocar la direccion del archivo donde haremos el proyecto
+Luego en path hay que crear una nueva ruta hacia la carpeta bin (aqui van a aestar los ejecutables para poder compilar go)
+Luego hay que pasar a las variables del sistema y tienen que estar igual que las variables de usuarios gopath y en path tiene que estar el bin de nuestro proyecto y el bin de donde esta instalado go
+
+
+
+
