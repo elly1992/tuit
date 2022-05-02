@@ -29,7 +29,14 @@ heroku login
 
 cd my-project/
 git init
-heroku git:remote -a copiatuiter
+heroku git:remote -a copiatuiter (hayq eu ir al repositoria en heroku y en los ajustes hay que agregar en el buildpack el lenguaje de programacion que estamos usando).
+
+Tambien hay que agregar un archivo de main.go 
+
+Crear el archivo go.mod sino da error heroku y escribir dentro
+module github.com/elly1992/tuit
+la version de go y 
+require().
 
 ------ Deploy your application
 
