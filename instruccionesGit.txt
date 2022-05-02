@@ -8,12 +8,12 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:elly1992/tuit.git
+git remote add origin https://github.com/elly1992/tuit.git
 git push -u origin main
 
 HACER PUSH
 
-git remote add origin git@github.com:elly1992/tuit.git
+git remote add origin https://github.com/elly1992/tuit.git
 git branch -M main
 git push -u origin main
 
