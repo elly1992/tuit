@@ -9,8 +9,8 @@ import (
 
 //grabar nombre, texto dentro del log de ejecucion
 
-var MongoCN = ConectarBD()                                                                                                                         //Se esta ejecutando al conexion a la bd y va a devolver la conexion, esta variable va a ser exportada a todos los archivos que estan dentro de la carpeta BD
-var clientOptions = options.Client().ApplyURI("mongodb+srv://ellym:3420bcee@tuiter.ljcmz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority") // esta funcion es de un paquete de mongo y y esta variable es de tipo clientOptions y recibe un parametro que es la url de donde hay que conectarse
+var MongoCN = ConectarBD()                                                                                                          //Se esta ejecutando al conexion a la bd y va a devolver la conexion, esta variable va a ser exportada a todos los archivos que estan dentro de la carpeta BD
+var clientOptions = options.Client().ApplyURI("mongodb+srv://ellym:3420bcee@tuiter.ljcmz.mongodb.net/?retryWrites=true&w=majority") // esta funcion es de un paquete de mongo y y esta variable es de tipo clientOptions y recibe un parametro que es la url de donde hay que conectarse
 
 func ConectarBD() *mongo.Client {
 	//ConectarBD creara la conexion a la BD
